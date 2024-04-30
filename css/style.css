@@ -1,0 +1,126 @@
+*{
+    font-size: 0.9rem;
+    color: white;
+}
+
+main{
+    gap: 10px;
+}
+
+body{
+    background: black;
+    padding: 5px;
+    align-content: center;
+}
+
+.item{
+    margin: 5px;
+    text-align: center;
+    font-size: 1.5em;
+    background: rgb(146, 139, 139);
+    border-radius: 20px;
+    align-content: center;
+
+    @media screen and (max-width: 780px) {
+        background-color: rgb(47, 23, 208);
+    }
+}
+
+.item2{
+    margin: 5px;
+    text-align: center;
+    font-size: 1.5em;
+    background: rgb(178, 178, 178, 0.8);
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-content: center;
+
+    @media screen and (max-width: 780px) {
+        background-color: rgb(53, 25, 239);
+    }
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-template{
+    grid-template:
+    "header header header" 120px
+    "nav nav nav"120px
+    "cont-dir section aside" 450px
+    "footer footer footer" 120px
+    / 1fr 3fr 1fr
+    ;
+}
+
+.grid-template2{
+    grid-template:
+    "header" 90px
+    "article" 220px
+    "footer" 90px
+    ;
+}
+
+.cont-dir{
+    grid-area: cont-dir;
+}
+
+.aside{
+    grid-area: aside;
+}
+
+.header{
+    grid-area: header;
+}
+
+.header2{
+    grid-area: header;
+}
+
+.article{
+    grid-area: article;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.section{
+    grid-area: section;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.footer2{
+    grid-area: footer;
+}
+
+@media screen and (max-width: 780px) {
+    .grid-template{
+        grid-template:
+        "header" 120px
+        "cont-dir" 100px
+        "section" 300px
+        "aside" 100px
+        "footer" 120px
+        / 1fr
+        ;
+    }
+
+    .grid-template2{
+        grid-template:
+        "header" 50px
+        "article" 150px
+        "footer" 50px
+        ;
+    }
+    
+}
+
+.bg-body-tertiary {
+    background-color: rgb(158, 158, 158, 0);
+}
